@@ -18,7 +18,7 @@ function stopAcceptResponse() {
 
 //自動設定觸發條件
 function setTrigger(){
-   ScriptApp.newTrigger("startAcceptResponse")
+    ScriptApp.newTrigger("startAcceptResponse")
             .timeBased()
             .at((new Date(start_time)))
             .create();
@@ -27,4 +27,4 @@ function setTrigger(){
             .timeBased()
             .at((new Date(end_time)))
             .create();
-};
+}
